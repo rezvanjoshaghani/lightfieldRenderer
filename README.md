@@ -45,7 +45,7 @@ Near Top Right = Cnear + (up * (Hnear / 2)) + (w * (Wnear / 2))
 
 Near Bottom Left = Cnear - (up * (Hnear / 2)) - (w * (Wnear /2))
 
-Near Bottom Right = Cnear + (up * (Hnear / 2)) + (w * (Wnear / 2))
+Near Bottom Right = Cnear - (up * (Hnear / 2)) + (w * (Wnear / 2))
 
 Far Top Left = Cfar + (up * (Hfar / 2)) - (w * Wfar / 2))
 
