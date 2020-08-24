@@ -19,38 +19,23 @@ The field of view represented by fov (this usually in radians)
 
 The aspect ratio represented by ar (this is the width of the screen divided by the height)
 
-First we will get the width and height of the near plane
+To find the corners of the plane at the distance dist:
 
-Hnear = 2 * tan(fov / 2) * nDis
+Hieght = 2 * tan(fov / 2) * dist
 
-Wnear = Hnear * ar
+Width = Hieght * ar
 
-Then we do the same for the far plane
+The center of the plane:
 
-Hfar = 2 * tan(fov / 2) * fDis
+center = P + v * dist
 
-Wfar = Hfar * ar
+Corner points:
 
-Now we get the center of the planes
+Top Left = center + (up * (Hieght / 2)) - (w * (Width / 2))
 
-Cnear = P + v * nDis
+Top Right = center + (up * (Hieght / 2)) + (w * (Width / 2))
 
-Cfar = P + v * fDis
+Bottom Left = center - (up * (Hieght / 2)) - (w * (Width /2))
 
-And now we get our points
+Bottom Right = center - (up * (Hieght / 2)) + (w * (Width / 2))
 
-Near Top Left = Cnear + (up * (Hnear / 2)) - (w * (Wnear / 2))
-
-Near Top Right = Cnear + (up * (Hnear / 2)) + (w * (Wnear / 2))
-
-Near Bottom Left = Cnear - (up * (Hnear / 2)) - (w * (Wnear /2))
-
-Near Bottom Right = Cnear - (up * (Hnear / 2)) + (w * (Wnear / 2))
-
-Far Top Left = Cfar + (up * (Hfar / 2)) - (w * Wfar / 2))
-
-Far Top Right = Cfar + (up * (Hfar / 2)) + (w * Wfar / 2))
-
-Far Bottom Left = Cfar - (up * (Hfar / 2)) - (w * Wfar / 2))
-
-Far Bottom Right = Cfar - (up * (Hfar / 2)) + (w * Wfar / 2))
