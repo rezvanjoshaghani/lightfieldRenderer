@@ -1,3 +1,5 @@
+*/ipch/*
+
 # Prerequisites
 *.d
 
@@ -30,3 +32,12 @@
 *.exe
 *.out
 *.app
+*.ipch
+*.tlog
+*.pdb
+*.opendb
+*.db
+*.ilk
+*.idb
+*.log
+*.enc

@@ -1,0 +1,2 @@
+C:/Users/walluser/source/repos/openGLTest/openGLTest/glm/glm/out/build/x64-Debug/CMakeFiles/edit_cache.dir
+C:/Users/walluser/source/repos/openGLTest/openGLTest/glm/glm/out/build/x64-Debug/CMakeFiles/rebuild_cache.dir
